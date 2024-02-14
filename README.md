@@ -10,3 +10,9 @@ Jose's [Architectural Website](https://rosario-je.github.io/) created with HTML,
 
 * [Week 1](/Week_1/)
   * [Day 1](/Week_1/Day_1/)
+* [Week 2](/Week_2/)
+* [Week 3](/Week_4/)
+  * [Object Oriented Programming](/Week_3/OOP/)
+  * [Recursion](/Week_3/recursion/)
+* [Week 4](/Week_4/)
+  * [Day 2]
