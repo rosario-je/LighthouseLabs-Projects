@@ -1,4 +1,4 @@
-class pizza {
+class Pizza {
     constructor() {
         this.toppings = ['cheese'];
     }
@@ -6,27 +6,21 @@ class pizza {
     addTopping(topping) {
         this.toppings.push(topping);
     }
-    setSize(size) {
-        if (size === 's' || size === 'm' || size === 'l'){
-            this.size = size;
-        }
+    get price() {
+        const basePrice = 10;
+        const toppingPrice = 2;
+        return basePrice + this.toppings.length * toppingPrice;
     }
-      getSize() {
-        return this.size;
+    set size(size) {
+        if (size === 's' || size === 'm' || size === 'l') {
+          this._size = size;
+        }
     }
 
 }
 
 
-const pizza = new pizza();
-pizza.setSize('m');
-pizza.getSize(); // m
+let pizza = new Pizza();
 
-
-
-
-
-
-
-
-let pizza2 = new pizza();
+pizza.price;      // instead of getPrice()
+pizza.size = 's'; // instead of setSize(size)
